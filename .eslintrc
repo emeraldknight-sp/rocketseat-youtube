@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended" // Activate Prettier rules as an ESLint plugin
+  ],
+  "plugins": ["prettier"],
+  "rules": {
+    // Add ESLint specific rules here if needed
+  },
+  "overrides": [
+    {
+      "files": ["*.html", "*.js", "*.ts"],
+      "parserOptions": {
+        "ecmaVersion": 2023 // Replace with your ECMAScript version value
+      }
+    }
+  ]
+}
