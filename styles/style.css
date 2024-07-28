@@ -1,48 +1,181 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+:root {
+  --gray-normal: #737373;
+  --gray-dark: #0a0a0a;
+  --gray-light: #f5f5f5;
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, b, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  --font-title: "Roboto", sans-serif;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+
 body {
-	line-height: 1;
+  font-family: var(--font-title);
 }
-ol, ul {
-	list-style: none;
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
 }
-blockquote, q {
-	quotes: none;
+
+.header-list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+.header-list .list-item {
+  font-size: 20px;
+  cursor: pointer;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+
+.header-logo {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+}
+
+.header-logo svg {
+  width: 100px;
+}
+
+.header-logo .country-code {
+  font-size: 10px;
+  color: var(--gray-normal);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 16px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.button-nav {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.button-nav:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.button-nav.active {
+  background-color: rgba(0, 0, 0, 1);
+  color: var(--gray-light);
+}
+
+.card-video {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 560px;
+}
+
+.card-video-image {
+  border-radius: 6px;
+  width: 100%;
+}
+
+.card-video-details {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.card-video-avatar {
+  border-radius: 100%;
+  width: 48px;
+  height: 100%;
+}
+
+.card-video-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-video-title {
+  font-size: 18px;
+  line-height: 24px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 220px;
+}
+
+.card-video-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-video-list-item {
+  font-size: 14px;
+  flex-direction: row;
+  gap: 2px;
+}
+
+.card-video-list-item:not(.card-video-list-item:last-child)::after {
+  content: "\00A0\2022\00A0";
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: var(--gray-light);
+  border-top: 1px solid var(--gray-normal);
+  padding: 4px 0;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  flex: 1;
+  max-width: 38px;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-button span {
+  font-size: 24px;
+}
+
+.footer-button:nth-child(3) span {
+  font-size: 32px;
+}
+
+.footer-button img {
+  width: 20px;
+  height: auto;
+  border-radius: 100%;
+}
+
+.footer-button p {
+  font-size: 12px;
 }
