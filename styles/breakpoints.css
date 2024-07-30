@@ -1,0 +1,60 @@
+@media (min-width: 768px) {
+  .videos-container {
+    padding-inline: 16px;
+  }
+
+  .card {
+    flex-direction: row;
+    max-width: 100%;
+  }
+
+  .card-thumbnail {
+    max-width: 500px;
+    border-radius: 8px;
+  }
+
+  .card-details {
+    flex: 1;
+  }
+
+  .card-avatar.small-screen {
+    display: none;
+  }
+
+  .card-description-bottom {
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .card-info.small-screen {
+    display: none;
+  }
+
+  .card-avatar.large-screen {
+    display: flex;
+    width: 24px;
+    height: 24px;
+  }
+
+  .card-info-channel.large-screen,
+  .card-info.large-screen {
+    display: flex;
+  }
+
+  .card-info.large-screen:first-child::after {
+    content: "";
+  }
+
+  .verified-channel.large-screen,
+  .verified-artist.large-screen {
+    display: flex;
+    fill: var(--gray-normal);
+  }
+
+  .card-info.large-screen svg {
+    height: 12px;
+    width: 12px;
+  }
+}
