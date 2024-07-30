@@ -18,6 +18,7 @@
 
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/breakpoints.css" />
     <title>YouTube</title>
   </head>
   <body>
@@ -91,38 +92,67 @@
     <main class="main">
       <nav class="navigation">
         <button class="button-nav active">All</button>
+        <button class="button-nav">Shorts</button>
         <button class="button-nav">Videos</button>
-        <button class="button-nav">Playlists</button>
+        <button class="button-nav">Podcasts</button>
         <button class="button-nav">Musics</button>
+        <button class="button-nav">Playlists</button>
       </nav>
-      <section>
-        <article class="videos-container">
-          <div class="card-video">
+      <section class="videos-container">
+        <a class="card" href="" target="_self" rel="noreferrer noopener">
+          <img
+            class="card-thumbnail"
+            src="https://i.ytimg.com/vi/qR2QIJdtgiU/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhOIEgoZTAP&rs=AOn4CLBDALVEKooQeqMK-ZGHJFMwKe-Lgg"
+            alt="channel thumbnail"
+          />
+          <div class="card-details">
             <img
-              class="card-video-image"
-              src="https://i.ytimg.com/vi/0PjmIH8LpOc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDLcKxEZwiv0UWHr0swAe1Lt-_H_w"
-              alt="channel video thumbnail"
+              class="card-avatar small-screen"
+              src="https://yt3.ggpht.com/ytc/AIdro_nrz-ustOZo-wl_HQ32RrZICUwh-lXbQHETsJekZbiaRA=s88-c-k-c0x00ffffff-no-rj"
+              alt="channel avatar"
             />
-            <div class="card-video-details">
-              <img
-                class="card-video-avatar"
-                src="https://yt3.ggpht.com/_VWAHU_TyrKnbBwI0HRqwzH05UQcpSz8J1RmhHOB-tubtmwEFOjnd4Xb9q9Pwgo0PtpgwMO0Mog=s88-c-k-c0x00ffffff-no-rj"
-                alt="channel avatar"
-              />
-              <div class="card-video-info">
-                <h6 class="card-video-title">
-                  🔴 Mortal Kombat Chronology Remix | The Greatest Remixes From
-                  Mortal Kombat To Play And Fun!
-                </h6>
-                <ul class="card-video-list">
-                  <li class="card-video-list-item">Megavácuo</li>
-                  <li class="card-video-list-item">100K views</li>
-                  <li class="card-video-list-item">64K likes</li>
-                </ul>
+            <div class="card-description">
+              <div class="card-description-top">
+                <h6 class="card-title">Crystal Castles "KEROSENE" Official</h6>
+                <button class="card-button">
+                  <span class="material-symbols-outlined">more_vert</span>
+                </button>
+              </div>
+              <div class="card-info-channel large-screen">
+                <span class="card-info">56 million views</span>
+                <span class="card-info">11 years ago</span>
+              </div>
+              <div class="card-description-bottom">
+                <img
+                  class="card-avatar large-screen"
+                  src="https://yt3.ggpht.com/ytc/AIdro_nrz-ustOZo-wl_HQ32RrZICUwh-lXbQHETsJekZbiaRA=s88-c-k-c0x00ffffff-no-rj"
+                  alt="channel avatar"
+                />
+                <div class="card-info-channel">
+                  <span class="card-info large-screen"
+                    >Crystal Castles official
+                    <div class="verified-artist large-screen">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        enable-background="new 0 0 24 24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        focusable="false"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M12 4v9.38c-.73-.84-1.8-1.38-3-1.38-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V8h6V4h-7z"
+                        ></path>
+                      </svg></div
+                  ></span>
+                  <span class="card-info small-screen">56 million views</span>
+                  <span class="card-info small-screen">11 years ago</span>
+                </div>
               </div>
             </div>
           </div>
-        </article>
+        </a>
       </section>
     </main>
     <footer class="footer">
