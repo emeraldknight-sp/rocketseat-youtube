@@ -1,31 +1,44 @@
 @media (min-width: 768px) {
+  .navigation {
+    overflow-x: hidden;
+  }
+
   .videos-container {
     padding-inline: 16px;
+    margin: unset;
   }
 
   .card {
     flex-direction: row;
-    max-width: 100%;
+    gap: 8px;
   }
 
   .card-thumbnail {
-    max-width: 500px;
+    max-width: 300px;
+    height: 100%;
     border-radius: 8px;
   }
 
-  .card-details {
+  /* .card-details {
     flex: 1;
-  }
+  } */
 
   .card-avatar.small-screen {
     display: none;
   }
 
+  .card-title {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.5;
+  }
+
   .card-description-bottom {
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     gap: 8px;
-    margin-top: 10px;
+    margin: 12px 0;
   }
 
   .card-info.small-screen {
@@ -45,6 +58,12 @@
 
   .card-info.large-screen:first-child::after {
     content: "";
+  }
+
+  .card-info-description {
+    display: block;
+    font-size: 12px;
+    color: var(--gray-normal);
   }
 
   .verified-channel.large-screen,
