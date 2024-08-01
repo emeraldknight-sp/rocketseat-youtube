@@ -13,9 +13,27 @@ body {
 .header {
   display: flex;
   flex-direction: row;
+  gap: 8px;
+  padding: 16px 16px 24px;
+}
+
+.header-main-section {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 16px 24px;
+  flex: 1;
+}
+
+.header-button {
+  display: none;
+  border: none;
+}
+
+.header-button img {
+  width: 32px;
+  height: auto;
+  border-radius: 100%;
 }
 
 .header-list {
@@ -27,6 +45,10 @@ body {
 .header-list .list-item {
   font-size: 20px;
   cursor: pointer;
+}
+
+.header-list .list-item:nth-child(2) {
+  display: none;
 }
 
 .header-logo {
@@ -91,6 +113,7 @@ body {
   max-width: 100%;
   overflow: hidden;
   text-decoration: none;
+  outline: none;
   cursor: pointer;
 }
 
@@ -188,7 +211,11 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.footer {
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -199,16 +226,10 @@ body {
   padding: 4px 0;
 }
 
-.footer-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.footer-button {
+.menu-button {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 4px;
   flex: 1;
@@ -216,23 +237,24 @@ body {
   background-color: transparent;
   padding: 0;
   border: none;
+  outline: none;
   cursor: pointer;
 }
 
-.footer-button span {
+.menu-button span {
   font-size: 24px;
 }
 
-.footer-button:nth-child(3) span {
+.menu-button:nth-child(3) span {
   font-size: 32px;
 }
 
-.footer-button img {
+.menu-button img {
   width: 20px;
   height: auto;
   border-radius: 100%;
 }
 
-.footer-button p {
+.menu-button p {
   font-size: 12px;
 }
