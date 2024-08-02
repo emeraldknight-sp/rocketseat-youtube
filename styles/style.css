@@ -2,7 +2,6 @@
   --gray-normal: #737373;
   --gray-dark: #0a0a0a;
   --gray-light: #f5f5f5;
-
   --font-title: "Roboto", sans-serif;
 }
 
@@ -13,8 +12,9 @@ body {
 .header {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 8px;
-  padding: 16px 16px 24px;
+  padding: 8px 16px 24px;
 }
 
 .header-main-section {
@@ -25,9 +25,73 @@ body {
   flex: 1;
 }
 
+.header-search-box {
+  display: none;
+  flex-direction: row;
+  flex: 1;
+  max-width: 400px;
+}
+
+.header-search-box div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  border: 1px solid var(--gray-normal);
+  border-radius: 32px 0 0 32px;
+  padding: 6px 16px;
+  overflow: hidden;
+}
+
+.header-search-box input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.header-search-box button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray-light);
+  padding: 0;
+  cursor: pointer;
+}
+
+.button-search {
+  width: 60px;
+  height: 40px;
+  border: 1px solid var(--gray-normal);
+  border-radius: 0 32px 32px 0;
+  border-left: 0;
+}
+
+.button-mic {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 100%;
+  margin-left: 16px;
+}
+
+.button-mic:hover {
+  filter: brightness(0.9);
+}
+
 .header-button {
   display: none;
   border: none;
+  background-color: white;
+  border-radius: 100%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.header-button:hover {
+  filter: brightness(0.9);
 }
 
 .header-button img {
@@ -47,6 +111,21 @@ body {
   cursor: pointer;
 }
 
+.list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background-color: white;
+}
+
+.list-item:hover {
+  filter: brightness(0.9);
+}
+
 .header-list .list-item:nth-child(2) {
   display: none;
 }
@@ -55,6 +134,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 2px;
+  text-decoration: none;
 }
 
 .header-logo svg {
@@ -160,9 +240,6 @@ body {
   font-size: 14px;
   line-height: 24px;
   font-weight: 500;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 .verified-channel.large-screen,
@@ -221,7 +298,7 @@ body {
   bottom: 0;
   z-index: 1;
   width: 100%;
-  background-color: var(--gray-light);
+  background-color: white;
   border-top: 1px solid var(--gray-normal);
   padding: 4px 0;
 }
