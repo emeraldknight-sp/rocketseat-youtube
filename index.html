@@ -1,9 +1,19 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Favicon and Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ee1c1b" />
+    <meta name="msapplication-TileColor" content="#fefefe" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,10 +30,51 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,300,1,-25"
     />
 
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/breakpoints.css" />
+
+    <!-- SEO Metatags -->
     <title>YouTube</title>
+    <meta name="title" content="YouTube" />
+    <meta
+      name="description"
+      content="This is a simple project to clone YouTube homepage using technologies like HTML, CSS and Javascript."
+    />
+    <meta name="keywords" content="youtube, clone" />
+    <meta name="author" content="David Almeida" />
+
+    <!-- Open Graph Metatags -->
+    <meta property="og:title" content="YouTube" />
+    <meta
+      property="og:description"
+      content="This is a simple project to clone YouTube homepage using technologies like HTML, CSS and Javascript."
+    />
+    <meta property="og:image" content="og-image.png" />
+    <meta
+      property="og:url"
+      content="https://react-project-stranger-things.vercel.app"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Metatags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="YouTube" />
+    <meta
+      name="twitter:description"
+      content="This is a simple project to clone YouTube homepage using technologies like HTML, CSS and Javascript."
+    />
+    <meta name="twitter:image" content="og-image.png" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://rocketseat-youtube.vercel.app" />
+
+    <!-- Search Engine Instructions -->
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="1 day" />
+    <meta name="language" content="English" />
+    <meta name="generator" content="HTML" />
   </head>
   <body>
     <header class="header">
@@ -31,7 +82,12 @@
         <span class="material-symbols-outlined">menu</span>
       </button>
       <section class="header-main-section">
-        <a href="https://youtube.com/" target="_self" rel="noopener noreferrer" class="header-logo">
+        <a
+          href="https://youtube.com/"
+          target="_self"
+          rel="noopener noreferrer"
+          class="header-logo"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             id="yt-logo-updated-svg_yt3"
@@ -100,7 +156,11 @@
           <button type="button" class="button-search" title="Search">
             <span class="material-symbols-outlined">search</span>
           </button>
-          <button type="button" class="button-mic" title="Search with your voice">
+          <button
+            type="button"
+            class="button-mic"
+            title="Search with your voice"
+          >
             <span class="material-symbols-sharp">mic</span>
           </button>
         </div>
@@ -160,8 +220,7 @@
           <button class="button-nav">Musics</button>
           <button class="button-nav">Playlists</button>
         </nav>
-        <section id="videos-container" class="videos-container">
-        </section>
+        <section id="videos-container" class="videos-container"></section>
       </div>
     </main>
     <script src="main.js"></script>
