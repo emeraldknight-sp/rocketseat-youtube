@@ -20,3 +20,4 @@ yarn-error.log*
 
 # Ignore the .DS_Store file on macOS systems
 .DS_Store
+.vercel
