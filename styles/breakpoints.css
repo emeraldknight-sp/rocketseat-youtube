@@ -27,13 +27,18 @@
     position: unset;
     flex-direction: column;
     justify-content: flex-start;
+    gap: 16px;
     max-width: 75px;
     border: none;
   }
 
   .menu-button {
-    width: 75px;
-    max-height: 75px;
+    width: 55px;
+    max-height: 55px;
+  }
+
+  .menu-button:hover {
+    filter: brightness(0.9);
   }
 
   .menu-button:nth-child(3) {

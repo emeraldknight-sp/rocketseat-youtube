@@ -14,7 +14,11 @@ body {
   flex-direction: row;
   align-items: center;
   gap: 8px;
-  padding: 8px 16px 24px;
+  padding: 8px 16px;
+  position: fixed;
+  z-index: 9999;
+  background-color: white;
+  width: calc(100% - 32px);
 }
 
 .header-main-section {
@@ -38,6 +42,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex: 1;
+  background-color: white;
   border: 1px solid var(--gray-normal);
   border-radius: 32px 0 0 32px;
   padding: 6px 16px;
@@ -149,7 +154,13 @@ body {
 .main {
   display: flex;
   flex-direction: column;
-  padding-bottom: 64px;
+  padding: 54px 0 54px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .navigation {
@@ -157,7 +168,7 @@ body {
   flex-direction: row;
   gap: 8px;
   overflow-x: scroll;
-  padding: 0 16px 8px;
+  padding: 8px 16px;
 }
 
 .button-nav {
@@ -184,7 +195,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding-top: 16px;
 }
 
 .card {
@@ -310,12 +320,14 @@ body {
   align-items: center;
   gap: 4px;
   flex: 1;
-  max-width: 38px;
+  width: 38px;
   background-color: transparent;
   padding: 0;
   border: none;
+  border-radius: 8px;
   outline: none;
   cursor: pointer;
+  background-color: white;
 }
 
 .menu-button span {
